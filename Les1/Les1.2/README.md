@@ -10,7 +10,7 @@ Ik heb een script gemaakt dat mijn gaming informatie toont, zoals een Steam prof
 using UnityEngine;
 
 public class GamerProfileDisplay : MonoBehaviour
-{
+
     void Start()
     {
         // Gaming profiel informatie
@@ -45,7 +45,7 @@ public class BonusGamingShowcase : MonoBehaviour
         StartCoroutine(LoadingEffect());
     }
 
-    void Sh![foto3](les222.png)owFavorieteGames()
+    void ShowFavorieteGames()
     {
         Debug.Log("Mijn Top 3 Favoriete Games:");
         Debug.Log("1. Mobile Legends");
@@ -74,10 +74,10 @@ public class BonusGamingShowcase : MonoBehaviour
     IEnumerator LoadingEffect()
     {
         string[] loadingMessages = {
-           "🔄 Loading assets...",
-           "🧠 Initializing game logic...",
-           "🎨 Rendering graphics...",
-           "🚀 Ready to play!"
+           "Loading assets...",
+           "Initializing game logic...",
+           "Rendering graphics...",
+           "Ready to play!"
        };
         foreach (string message in loadingMessages)
         {
